@@ -1,0 +1,79 @@
+
+dac@dac-06 MINGW64 ~/Desktop/cdacdac
+// $ git init
+Initialized empty Git repository in C:/Users/dac.STUDENTSDC/Desktop/cdacdac/.git/
+
+
+
+
+dac@dac-06 MINGW64 ~/Desktop/cdacdac (master)
+$ git config unset user.name
+
+
+
+
+dac@dac-06 MINGW64 ~/Desktop/cdacdac (master)
+$ git config unset user.email
+
+
+
+dac@dac-06 MINGW64 ~/Desktop/cdacdac (master)
+$ git config user.email
+yajeci2771@mowline.com
+
+
+
+dac@dac-06 MINGW64 ~/Desktop/cdacdac (master)
+$ git add .
+
+
+
+dac@dac-06 MINGW64 ~/Desktop/cdacdac (master)
+$ git commit -m "first commit"
+[master (root-commit) db845c0] first commit
+ 1 file changed, 5 insertions(+)
+ create mode 100644 hello.java
+
+
+
+dac@dac-06 MINGW64 ~/Desktop/cdacdac (master)
+$ git branch -M main
+
+
+
+dac@dac-06 MINGW64 ~/Desktop/cdacdac (main)
+$ git remote add origin https://github.com/vishvajitgaikwad/cdacdac.git
+
+
+
+dac@dac-06 MINGW64 ~/Desktop/cdacdac (main)
+$ git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 308 bytes | 308.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/vishvajitgaikwad/cdacdac.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+
+
+dac@dac-06 MINGW64 ~/Desktop/cdacdac (main)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 933 bytes | 54.00 KiB/s, done.
+From https://github.com/vishvajitgaikwad/cdacdac
+   db845c0..ad8313c  main       -> origin/main
+Updating db845c0..ad8313c
+Fast-forward
+ hello.java | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+dac@dac-06 MINGW64 ~/Desktop/cdacdac (main)
+$
